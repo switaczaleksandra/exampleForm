@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz</title>
+  <meta property="og:image" content="images/share.png">
+  <link rel="icon" href="images/share.png">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body">
+  <div class="container">
+    <form class="form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Dane osobowe</legend>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Imię*:
+            </span>
+            <input class="form__field" name="name" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Nazwisko*:
+            </span>
+            <input class="form__field" name="surname" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Wybierz płeć*:
+            </span>
+            <select class="form__field" name="gender" required>
+              <option value="male">Mężczyzna</option>
+              <option value="female">Kobieta</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Data urodzenia:
+            </span>
+            <input class="form__field" name="date" type="date">
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Adres e-mail*:
+            </span>
+            <input class="form__field" type="email" name="email" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Numer telefonu*:
+            </span>
+            <input class="form__field" type="tel" name="tel" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Twój wzrost:
+            </span>
+            <input class="form__field" type="number" name="height" step="5">
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Kilka słów o Tobie:
+            </span>
+            <textarea class="form__field form__field--textarea" name="description"></textarea>
+          </label>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Oczekiwane wynagrodzenie:
+            </span>
+            <input class="form__field" name="carBrand" list="carBrands">
+            <datalist id="carBrands">
+              <option>3-4 tys netto</option>
+              <option>4-6 tys netto</option>
+              <option>6-8 tys netto</option>
+              <option>8-10 tys netto</option>
+            </datalist>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Załącz swoje CV*:
+            </span>
+            <input class="form__field" type="file" name="cv" required>
+          </label>
+        </p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ulubieni wokaliści</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="Bieber"> Justin Bieber
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Timberlake"> Justin Timberlake
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Grande"> Ariana Grande
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Swift"> Taylor Swift
+            </label>
+          </li>
+          <li>
+            <label>
+              <input  type="checkbox" name="Lipa"> Dua Lipa
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="Wyślij!" class="form__button">
+    </form>
+  </div>
+</body>
+
+</html>
